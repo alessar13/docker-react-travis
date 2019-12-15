@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t alessar13/docker-react-travis -f Dockerfile.dev .
 script:
-  - docker run -p 8888:80 alessar13/docker-react-travis npm run test -- -- coverage
+  - docker run -p 8888:80 alessar13/docker-react-travis npm run test -- --coverage
